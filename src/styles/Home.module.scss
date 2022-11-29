@@ -1,0 +1,159 @@
+$primary-color: #0070f3;
+$border-color: #eaeaea;
+$bg-color: #202124;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.layout {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+  background-color: #000000;
+  color: white;
+}
+
+.sideBar {
+  padding: 1rem;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  background-color: $bg-color;
+  color: white;
+  min-height: 100vh;
+  align-items: center;
+  gap: .5rem;
+
+  a {
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}
+
+.main {
+  flex: 1;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer {
+  display: flex;
+
+  a {
+    color: $primary-color;
+
+    &:hover {
+      border-bottom: 1px solid $border-color;
+    }
+  }
+}
+
+// ROOMS PAGE
+.roomsGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.roomCard {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid $border-color;
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 1rem 0;
+  align-items: center;
+
+  &:hover {
+    border-color: $primary-color;
+  }
+
+  div {
+    display: flex;
+    gap: 10px;
+  }
+}
+
+.roomForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+
+  div {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+
+    textarea,
+    input {
+      resize: none;
+      background-color: transparent;
+      border: 1px solid $border-color;
+      color: white;
+    }
+  }
+}
+
+.roomWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.roomFilter {
+  display: flex;
+  flex-direction: column;
+
+  .filterWrapper {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 20px;
+    align-items: center;
+    gap: 2rem;
+    border: 1px solid $border-color;
+    border-radius: 10px;
+
+    &:hover {
+      border-color: $primary-color;
+    }
+
+    div {
+      display: flex;
+      gap: 10px;
+    }
+  }
+}
+
+// GUEST PAGE
+.guestsGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.guestCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  margin-top: 1rem;
+  border: 1px solid $border-color;
+  border-radius: 10px;
+
+  &:hover {
+    border-color: $primary-color;
+  }
+}
