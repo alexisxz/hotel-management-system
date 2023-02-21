@@ -1,4 +1,3 @@
-![TESTS](https://github.com/alexisxz/hotel-management-system/actions/workflows/node.js.yml/badge.svg)
 # Hotel Management System
 
 ## Getting Started
